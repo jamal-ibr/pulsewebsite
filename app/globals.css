@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-textPrimary antialiased;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-image: radial-gradient(circle at 10% -20%, rgba(77,163,255,0.18), transparent 35%),
+    radial-gradient(circle at 90% -10%, rgba(47,107,255,0.12), transparent 30%),
+    linear-gradient(180deg, #0b1220 0%, #0d1528 60%, #0b1220 100%);
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-6 py-20 lg:py-24;
+}
+
+.glass-card {
+  @apply rounded-2xl border border-borderSubtle bg-panel p-6 backdrop-blur-xl;
+}
+
+.muted {
+  @apply text-textSecondary;
+}
+
+.cta-glow {
+  @apply shadow-glowCTA transition duration-300 hover:brightness-110 hover:shadow-glowCTA;
+}
+
+.pulse-wave {
+  background: radial-gradient(circle at 50% 20%, rgba(77, 163, 255, 0.16), transparent 60%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
