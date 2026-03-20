@@ -2,18 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
 
+/* Dental landing page body */
 body {
-  @apply bg-background text-textPrimary antialiased;
+  @apply bg-surface text-textBody antialiased;
   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background-image: radial-gradient(circle at 10% -20%, rgba(77,163,255,0.18), transparent 35%),
-    radial-gradient(circle at 90% -10%, rgba(47,107,255,0.12), transparent 30%),
-    linear-gradient(180deg, #0b1220 0%, #0d1528 60%, #0b1220 100%);
 }
 
+/* ── Dental design system ── */
+.d-container {
+  @apply mx-auto w-full max-w-6xl px-5 sm:px-6 lg:px-8;
+}
+
+.d-section {
+  @apply py-16 lg:py-24;
+}
+
+.d-card {
+  @apply rounded-2xl border border-border bg-white p-6 shadow-card;
+}
+
+.d-btn-primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-white shadow-cta transition-all duration-200 hover:bg-primaryDark hover:shadow-ctaHover;
+}
+
+.d-btn-secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-borderStrong bg-white px-6 py-3.5 text-sm font-semibold text-textBody transition-all duration-200 hover:border-primary hover:text-primary;
+}
+
+.d-badge {
+  @apply inline-flex items-center rounded-full bg-primaryLight px-3.5 py-1 text-xs font-semibold uppercase tracking-widest text-primary;
+}
+
+/* ── Legacy dark-theme utilities (for /industries pages) ── */
 .section-shell {
   @apply mx-auto w-full max-w-6xl px-6 py-20 lg:py-24;
 }
@@ -35,10 +61,47 @@ body {
 }
 
 @keyframes pulse {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+/* ── Phone mockup ── */
+.phone-mockup {
+  @apply relative mx-auto;
+  width: 220px;
+}
+
+/* ── Stat counter animation ── */
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.stat-animate {
+  animation: countUp 0.7s ease-out forwards;
+}
+
+/* ── Flow connector dots ── */
+.flow-dot {
+  @apply h-2.5 w-2.5 rounded-full bg-primary;
+}
+
+/* ── Video embed ── */
+.video-wrapper {
+  @apply relative w-full overflow-hidden rounded-2xl;
+  padding-top: 56.25%; /* 16:9 */
+}
+
+.video-wrapper iframe {
+  @apply absolute inset-0 h-full w-full;
+}
+
+/* ── Sticky nav shadow ── */
+.nav-scrolled {
+  @apply shadow-md;
+}
+
+/* ── Pricing highlight ── */
+.pricing-featured {
+  @apply ring-2 ring-primary;
 }
