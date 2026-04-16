@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "scrape:leads": "tsx scripts/scrape-leads/src/index.ts"
+    "scrape:leads": "npm run scrape:leads:build && node scripts/scrape-leads/.build/index.js",
+    "scrape:leads:build": "tsc -p scripts/scrape-leads/tsconfig.build.json --module ES2022 --moduleResolution bundler --target ES2022"
   },
   "dependencies": {
     "cheerio": "^1.0.0",
@@ -26,7 +27,7 @@
     "eslint-config-next": "14.2.5",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.6",
-    "tsx": "^4.19.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.5.3"
   }
 }

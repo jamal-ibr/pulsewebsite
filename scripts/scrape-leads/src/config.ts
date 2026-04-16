@@ -1,11 +1,23 @@
+import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Walk up from CWD until we find the repo's package.json. This keeps the
+// output path correct whether the scraper is run via tsx from source or
+// via node from a compiled build.
+function findRepoRoot(start: string): string {
+  let dir = start;
+  while (dir !== path.parse(dir).root) {
+    if (fs.existsSync(path.join(dir, 'package.json')) &&
+        fs.existsSync(path.join(dir, 'next.config.ts'))) {
+      return dir;
+    }
+    dir = path.dirname(dir);
+  }
+  return start;
+}
 
-export const ROOT = path.resolve(__dirname, '../../..');
-export const OUT_DIR = path.join(ROOT, 'data', 'leads');
+export const ROOT = process.env.PULSE_REPO_ROOT ?? findRepoRoot(process.cwd());
+export const OUT_DIR = process.env.LEADS_OUT_DIR ?? path.join(ROOT, 'data', 'leads');
 
 // Birmingham city centre (Victoria Square / New Street).
 export const BIRMINGHAM_CENTRE = { lat: 52.4800, lon: -1.9025 };

@@ -13,3 +13,8 @@ data/leads/
 
 # TS incremental build info
 *.tsbuildinfo
+
+# scraper build artefacts (rebuilt by `npm run scrape:leads`)
+scripts/scrape-leads/.build/*
+!scripts/scrape-leads/.build/package.json
+.scrape-build/
