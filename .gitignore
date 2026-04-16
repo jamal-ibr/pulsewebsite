@@ -7,3 +7,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 .DS_Store
+
+# Generated lead-scrape output
+data/leads/
+
+# TS incremental build info
+*.tsbuildinfo
