@@ -49,6 +49,7 @@ fi
 SKILLS_CLI_PACKAGES=(
   "remotion-dev/skills:remotion-best-practices"
   "emilkowalski/skill:emil-design-eng"
+  "pbakaus/impeccable:impeccable"
 )
 for entry in "${SKILLS_CLI_PACKAGES[@]}"; do
   repo="${entry%%:*}"
