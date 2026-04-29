@@ -44,12 +44,21 @@ if [ -d "$ECC_DIR" ]; then
   fi
 fi
 
-# 2. Remotion best-practices skill (skips if already symlinked)
-if [ ! -e "$HOME/.claude/skills/remotion-best-practices" ]; then
-  log "installing remotion-best-practices via skills CLI"
-  npx --yes skills@1.5.3 add remotion-dev/skills -g -y --all >/dev/null 2>&1 || \
-    log "remotion install failed (continuing)"
-fi
+# 2. Skills installed via the `skills` CLI.
+# Format: "<repo-slug>:<resulting-skill-dir-name>"
+SKILLS_CLI_PACKAGES=(
+  "remotion-dev/skills:remotion-best-practices"
+  "emilkowalski/skill:emil-design-eng"
+)
+for entry in "${SKILLS_CLI_PACKAGES[@]}"; do
+  repo="${entry%%:*}"
+  name="${entry##*:}"
+  if [ ! -e "$HOME/.claude/skills/$name" ]; then
+    log "installing $name from $repo"
+    npx --yes skills@1.5.3 add "$repo" -g -y --all >/dev/null 2>&1 || \
+      log "$name install failed (continuing)"
+  fi
+done
 
 # 3. claude-mem plugin (idempotent; checks installed_plugins.json)
 PLUGINS_JSON="$HOME/.claude/plugins/installed_plugins.json"
