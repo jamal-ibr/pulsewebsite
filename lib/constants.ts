@@ -5,6 +5,7 @@ export const SITE = {
   tagline: "Your practice's new heartbeat",
   email: 'hello@workwithpulse.ai',
   bookingUrl: '/contact',
+  calendlyUrl: 'https://calendly.com/jamal-ibrx/30min',
   description:
     'AI-powered systems that capture every enquiry, reactivate dormant leads, and generate predictable new business — built for service-based practices.',
   url: 'https://workwithpulse.ai',
@@ -98,7 +99,7 @@ export const HOW_IT_WORKS = [
   {
     step: '01',
     title: 'Discovery call',
-    description: 'A 15-minute conversation to understand your practice, your team, and where revenue is leaking.',
+    description: 'A 30-minute conversation to understand your practice, your team, and where revenue is leaking.',
   },
   {
     step: '02',
