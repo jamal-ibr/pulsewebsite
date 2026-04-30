@@ -2,6 +2,7 @@
 
 import { motion, useReducedMotion } from 'framer-motion';
 import { Button } from '@/components/ui/Button';
+import { CalendlyTrigger } from '@/components/ui/CalendlyTrigger';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { PulseLine } from '@/components/ui/PulseLine';
@@ -58,9 +59,7 @@ export function Hero() {
             </motion.p>
 
             <motion.div variants={itemVariants} className="flex flex-wrap items-center gap-4 pt-2">
-              <Button as="link" href="/contact" size="lg" withArrow>
-                Book a discovery call
-              </Button>
+              <CalendlyTrigger size="lg">Book a discovery call</CalendlyTrigger>
               <Button as="link" href="#how-it-works" size="lg" variant="secondary">
                 See how it works
               </Button>

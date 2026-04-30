@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/Button';
+import { CalendlyTrigger } from '@/components/ui/CalendlyTrigger';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { PulseLine } from '@/components/ui/PulseLine';
@@ -44,9 +45,7 @@ export function FinalCTA({
           </Reveal>
           <Reveal delay={0.15}>
             <div className="mt-3 flex flex-wrap items-center justify-center gap-4">
-              <Button as="link" href="/contact" size="lg" withArrow>
-                Book a discovery call
-              </Button>
+              <CalendlyTrigger size="lg">Book a discovery call</CalendlyTrigger>
               <Button
                 as="link"
                 href="mailto:hello@workwithpulse.ai"
