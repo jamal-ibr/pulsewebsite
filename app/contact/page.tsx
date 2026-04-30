@@ -5,12 +5,13 @@ import { Eyebrow } from '@/components/ui/Eyebrow';
 import { PageHero } from '@/components/ui/PageHero';
 import { Reveal } from '@/components/ui/Reveal';
 import { ContactForm } from '@/components/sections/ContactForm';
+import { CalendlyEmbed } from '@/components/sections/CalendlyEmbed';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Book a 15-minute discovery call. We assess fit, answer your questions, and tell you straight whether Pulse is the right move for your practice.',
+    'Book a 30-minute discovery call. We assess fit, answer your questions, and tell you straight whether Pulse is the right move for your practice.',
   alternates: { canonical: '/contact' },
 };
 
@@ -25,7 +26,7 @@ export default function ContactPage() {
             <span className="accent-gradient italic">your practice.</span>
           </>
         }
-        description="A 15-minute call to assess fit and answer your questions. If we're the right move, we scope a proposal. If we're not, we'll point you somewhere better."
+        description="A 30-minute call to assess fit and answer your questions. If we're the right move, we scope a proposal. If we're not, we'll point you somewhere better."
       />
 
       <section className="relative py-20 sm:py-28">
@@ -35,7 +36,7 @@ export default function ContactPage() {
               <div className="flex flex-col gap-5">
                 <Eyebrow>Discovery Call</Eyebrow>
                 <h2 className="heading-gradient text-3xl font-medium tracking-tight text-balance sm:text-4xl">
-                  Book a 15-minute call.
+                  Book a 30-minute call.
                 </h2>
                 <p className="text-[1.02rem] leading-relaxed text-silver text-pretty">
                   Pick a slot below. We'll spend the call understanding your
@@ -43,25 +44,10 @@ export default function ContactPage() {
                   questions about how Pulse works. No pitch deck.
                 </p>
 
-                <div className="mt-4 gradient-border relative overflow-hidden rounded-2xl">
-                  {/* CALENDLY EMBED: workwithpulse-discovery-call */}
-                  <div
-                    className="grid h-[460px] place-items-center bg-ink-deep/50 p-8 text-center"
-                    aria-label="Calendly booking embed placeholder"
-                  >
-                    <div className="flex max-w-sm flex-col gap-3">
-                      <span className="mx-auto font-mono text-eyebrow uppercase text-pulse-bright/80">
-                        Calendly Embed
-                      </span>
-                      <p className="text-sm leading-relaxed text-silver">
-                        Calendly will mount here.
-                      </p>
-                      <p className="font-mono text-xs text-silver/60">
-                        &lt;!-- workwithpulse-discovery-call --&gt;
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                <CalendlyEmbed
+                  url={SITE.calendlyUrl}
+                  className="mt-4 gradient-border overflow-hidden rounded-2xl"
+                />
               </div>
             </Reveal>
 

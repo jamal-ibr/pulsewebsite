@@ -18,7 +18,7 @@ export function FinalCTA({
       <span className="accent-gradient italic">silence.</span>
     </>
   ),
-  description = 'A 15-minute discovery call. We assess fit, answer your questions, and tell you straight whether Pulse is the right move for your practice.',
+  description = 'A 30-minute discovery call. We assess fit, answer your questions, and tell you straight whether Pulse is the right move for your practice.',
 }: Props) {
   return (
     <section className="relative overflow-hidden border-t border-line/60 bg-mesh-soft py-24 sm:py-32">
