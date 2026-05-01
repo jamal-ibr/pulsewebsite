@@ -15,7 +15,7 @@ export function ContactForm() {
   function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus('sending');
-    // Placeholder — wire to real endpoint later.
+    // Placeholder. Wire to a real endpoint later.
     setTimeout(() => setStatus('sent'), 700);
   }
 

@@ -74,7 +74,7 @@ export function PillarCard({ pillar, index, href }: Props) {
     <Link
       href={href}
       className={cn('block h-full focus-visible:rounded-2xl')}
-      aria-label={`${pillar.title} — learn more`}
+      aria-label={`${pillar.title}: learn more`}
     >
       {card}
     </Link>

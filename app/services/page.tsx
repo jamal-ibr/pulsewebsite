@@ -29,7 +29,7 @@ export default function ServicesPage() {
             <span className="accent-gradient italic">service practices.</span>
           </>
         }
-        description="One integrated system that captures every enquiry, reactivates dormant leads, and generates predictable new business. Built and run as a single engine — not a stitched-together stack."
+        description="One integrated system that captures every enquiry, reactivates dormant leads, and generates predictable new business. Built and run as a single engine, not a stitched-together stack."
       >
         <Button as="link" href="/contact" size="lg" withArrow>
           Book a discovery call
@@ -127,8 +127,8 @@ export default function ServicesPage() {
             <Reveal delay={0.1}>
               <div className="flex flex-col gap-6">
                 <p className="text-[1.05rem] leading-relaxed text-silver text-pretty">
-                  For businesses outside our core verticals — agencies, SMBs, and
-                  organisations with bespoke AI needs — we run scoped consulting
+                  For businesses outside our core verticals (agencies, SMBs, and
+                  organisations with bespoke AI needs), we run scoped consulting
                   engagements. Custom integration, internal automation, and
                   founder-led delivery.
                 </p>
