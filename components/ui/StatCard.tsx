@@ -19,26 +19,21 @@ export function StatCard({ value, label, className, index = 0 }: Props) {
   return (
     <motion.div
       ref={ref}
-      initial={reduced ? false : { opacity: 0, y: 28 }}
+      initial={reduced ? false : { opacity: 0, y: 24 }}
       animate={inView ? { opacity: 1, y: 0 } : undefined}
-      transition={{ duration: 0.65, delay: 0.08 * index, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, delay: 0.08 * index, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        'gradient-border glass-hover relative overflow-hidden rounded-2xl px-7 py-8 sm:px-8 sm:py-9',
+        'gradient-border glass-hover relative overflow-hidden rounded-2xl p-5 sm:p-6',
         className,
       )}
     >
-      <div className="relative z-10">
-        <p className="font-mono text-eyebrow uppercase text-silver/60">
-          {String(index + 1).padStart(2, '0')}
-        </p>
-        <p className="mt-5 text-4xl font-medium tracking-tight text-bone sm:text-5xl">
+      <div className="relative z-10 flex flex-col gap-2">
+        <p className="text-3xl font-medium tracking-tight text-bone sm:text-4xl">
           {value}
         </p>
-        <p className="mt-3 max-w-xs text-[0.95rem] leading-relaxed text-silver">
-          {label}
-        </p>
+        <p className="text-[0.92rem] leading-snug text-silver">{label}</p>
       </div>
-      <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-pulse/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-pulse/10 blur-3xl" />
     </motion.div>
   );
 }

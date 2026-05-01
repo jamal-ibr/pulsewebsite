@@ -7,7 +7,7 @@ export const SITE = {
   bookingUrl: '/contact',
   calendlyUrl: 'https://calendly.com/jamal-ibrx/30min',
   description:
-    'AI-powered systems that capture every enquiry, reactivate dormant leads, and generate predictable new business — built for service-based practices.',
+    'AI-powered systems that capture every enquiry, reactivate dormant leads, and generate predictable new business. Built for service-based practices.',
   url: 'https://workwithpulse.ai',
 } as const;
 
@@ -36,7 +36,7 @@ export const PILLARS: Pillar[] = [
     eyebrow: 'AI Receptionist',
     title: 'Never miss a lead',
     description:
-      'A trained AI receptionist answers every call, every enquiry — 24/7, including evenings and weekends. It qualifies, books and routes intelligently, so your team only handles what matters.',
+      'A trained AI receptionist answers every call and every enquiry, 24/7, including evenings and weekends. It qualifies, books, and routes intelligently. Your team only handles what matters.',
     bullets: [
       'Handles inbound calls and web enquiries 24/7',
       'Books appointments directly into your CRM or calendar',
@@ -68,7 +68,7 @@ export const PILLARS: Pillar[] = [
     eyebrow: 'Acquisition Engine',
     title: 'Generate new leads consistently',
     description:
-      'AI-optimised Meta and Google ads, high-converting landing pages and instant chat — engineered as one acquisition system, not a stack of disconnected tools.',
+      'AI-optimised Meta and Google ads, high-converting landing pages, and instant chat. Engineered as one acquisition system, not a stack of disconnected tools.',
     bullets: [
       'Daily-optimised paid campaigns on Meta and Google',
       'Conversion-tuned landing pages with embedded AI chat',
@@ -99,22 +99,22 @@ export const HOW_IT_WORKS = [
   {
     step: '01',
     title: 'Discovery call',
-    description: 'A 30-minute conversation to understand your practice, your team, and where revenue is leaking.',
+    description: 'A 30-minute call to map your practice, your team, and the gaps where revenue is leaking out.',
   },
   {
     step: '02',
     title: 'Custom system design',
-    description: 'We map a system tailored to your workflow, integrations and tone of voice — not a templated install.',
+    description: 'A system tailored to your workflow, your integrations, and your tone of voice. Not a template.',
   },
   {
     step: '03',
     title: 'Implementation in 2 weeks',
-    description: 'Built, tested and live with minimal disruption. Your team gets trained on what to keep an eye on.',
+    description: 'Built, tested, and live with minimal disruption. Your team learns exactly what to monitor.',
   },
   {
     step: '04',
     title: 'Ongoing optimisation',
-    description: 'Monthly reviews, prompt tuning, and campaign optimisation. The system gets smarter every week.',
+    description: 'Monthly reviews, prompt tuning, and campaign optimisation. The system gets sharper every week.',
   },
 ] as const;
 
@@ -190,7 +190,7 @@ export const INDUSTRIES: Industry[] = [
     name: 'Other service-based practices',
     shortLabel: 'Service-based',
     blurb:
-      'High-volume inbound services — from physio to legal to bespoke trades — share the same enquiry economics. Get in touch about your specific industry.',
+      'High-volume inbound services share the same enquiry economics. Physio, legal, bespoke trades, more. Get in touch about your specific industry.',
     pains: [
       'Phone-led businesses losing revenue to missed calls',
       'No system for warm follow-up across channels',
@@ -216,15 +216,15 @@ export const TRUST_SIGNALS = [
 export const FAQS = [
   {
     q: 'Will AI replace my reception team?',
-    a: 'No. Pulse is built to remove the repetitive load — answering routine enquiries, booking standard appointments, and handling after-hours volume — so your reception team can focus on the conversations that genuinely need a human. Most practices keep their team and grow capacity instead of cutting headcount.',
+    a: 'No. Pulse removes the repetitive load: routine enquiries, standard appointments, after-hours volume. Your reception team can then focus on the conversations that genuinely need a human. Most practices keep their team and grow capacity instead of cutting headcount.',
   },
   {
     q: 'How does the AI handle complex patient questions?',
-    a: 'It is trained on your specific services, FAQs, pricing structure and tone of voice. For anything outside its scope — clinical advice, treatment plans, sensitive escalations — it routes the conversation to a human on your team with full context attached. It never invents an answer.',
+    a: 'It is trained on your specific services, FAQs, pricing structure, and tone of voice. For anything outside its scope (clinical advice, treatment plans, sensitive escalations), it routes the conversation to a human on your team with full context attached. It never invents an answer.',
   },
   {
     q: 'What is the implementation process?',
-    a: 'A discovery call, a written system design, and a two-week build window. We integrate with your existing CRM, calendar and phone system, train the AI on your practice, and run a quiet phase before going fully live. Total founder-led, no junior hand-off.',
+    a: 'A discovery call, a written system design, then a two-week build window. We integrate with your existing CRM, calendar, and phone system, train the AI on your practice, and run a quiet phase before going fully live. Founder-led from start to finish.',
   },
   {
     q: 'How long until I see ROI?',
@@ -232,7 +232,7 @@ export const FAQS = [
   },
   {
     q: 'What happens if a patient prefers to speak to a human?',
-    a: 'They always can. The AI offers a human handover at any point, and certain conversation types — emergencies, complex cases, complaints — are routed to a human by default. Patient choice is never overridden.',
+    a: 'They always can. The AI offers a human handover at any point. Certain conversation types (emergencies, complex cases, complaints) are routed to a human by default. Patient choice is never overridden.',
   },
   {
     q: 'Is patient data secure?',
@@ -244,6 +244,6 @@ export const FAQS = [
   },
   {
     q: 'Can I customise how the AI responds?',
-    a: 'Yes — voice, vocabulary, pricing rules, escalation paths, even objection handling. The AI is a reflection of your practice, not a generic bot. You approve every response template before it goes live.',
+    a: 'Yes. Voice, vocabulary, pricing rules, escalation paths, even objection handling. The AI is a reflection of your practice, not a generic bot. You approve every response template before it goes live.',
   },
 ];

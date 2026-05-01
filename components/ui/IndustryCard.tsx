@@ -56,7 +56,7 @@ export function IndustryCard({ industry, index, href, compact = false }: Props) 
 
   if (!href) return card;
   return (
-    <Link href={href} className="block h-full" aria-label={`${industry.name} — read more`}>
+    <Link href={href} className="block h-full" aria-label={`${industry.name}: read more`}>
       {card}
     </Link>
   );

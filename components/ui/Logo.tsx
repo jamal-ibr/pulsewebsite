@@ -5,7 +5,7 @@ export function Logo({ className }: { className?: string }) {
   return (
     <Link
       href="/"
-      aria-label="Pulse — home"
+      aria-label="Pulse home"
       className={cn(
         'inline-flex items-center gap-2.5 text-bone transition-opacity hover:opacity-90',
         className,

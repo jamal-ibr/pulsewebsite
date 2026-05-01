@@ -10,7 +10,7 @@ export function IndustriesGrid() {
         <SectionHeading
           eyebrow="Who We Build For"
           title="High-volume, high-intent practices."
-          description="Pulse is built for businesses where every inbound call carries real revenue. We've gone deep on three verticals — and the system carries cleanly into adjacent service work."
+          description="Pulse is built for businesses where every inbound call carries real revenue. We have gone deep on three verticals. The system carries cleanly into adjacent service work."
           size="lg"
         />
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4">

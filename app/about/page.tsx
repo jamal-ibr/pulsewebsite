@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Check } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
+import { LinkedinLink } from '@/components/ui/LinkedinLink';
 import { PageHero } from '@/components/ui/PageHero';
 import { Reveal } from '@/components/ui/Reveal';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -16,29 +17,29 @@ export const metadata: Metadata = {
 const VALUES = [
   {
     title: 'Results over hype',
-    body: 'No "AI revolution" pitch decks. We measure success in recovered enquiries, booked consultations, and reactivated revenue.',
+    body: 'Success is recovered enquiries, booked consultations, and reactivated revenue. Not "AI transformation" decks.',
   },
   {
     title: 'Built for outcomes',
-    body: "Every system we ship is tied to a number that shows up in your accounts. If it doesn't move that number, it doesn't ship.",
+    body: 'If a system does not move a number that shows up in your accounts, it does not ship.',
   },
   {
-    title: 'Founder-led service',
-    body: 'You work with the founder. No junior account managers, no offshore hand-off, no support ticket queue.',
+    title: 'Founder-led',
+    body: 'You work with me directly. The same person scopes, builds, and stays close once the system is live.',
   },
   {
     title: 'Transparent pricing',
-    body: 'Flat fees scoped to your practice. No per-conversation gotchas. No long-term lock-ins. Cancel any time.',
+    body: 'Flat fees scoped to your practice. No per-conversation gotchas. No long lock-ins. Cancel any time.',
   },
 ];
 
 const REASONS = [
-  'Direct founder access — no hand-off to a junior team',
-  'Healthcare-specific expertise, not generic SaaS',
-  'UK-based delivery and support, GDPR by default',
+  'Direct founder access on every project',
+  'Healthcare-specific, not generic SaaS',
+  'UK-based delivery, GDPR by default',
   'No long-term lock-in contracts',
-  'Built by an operator who has lived inside enterprise AI rollouts',
-  'Same person scopes, builds, and supports — no information loss',
+  'Operator-built, shaped by enterprise AI rollouts',
+  'One person scopes, builds, and supports the system',
 ];
 
 export default function AboutPage() {
@@ -52,7 +53,7 @@ export default function AboutPage() {
             <span className="accent-gradient italic">not a vendor.</span>
           </>
         }
-        description="Most AI-for-healthcare is a SaaS dashboard with a chatbot bolted on. Pulse is built the other way around — with operational discipline first, software second."
+        description="Most AI for healthcare is a SaaS dashboard with a chatbot bolted on. Pulse is built the other way around. Operational discipline first, software second."
       />
 
       <section className="relative py-24 sm:py-28">
@@ -65,9 +66,11 @@ export default function AboutPage() {
                   Jamal Ibrahim
                 </p>
                 <p className="text-sm text-silver">
-                  Senior solution architect · big-four professional services. Building
-                  enterprise AI systems by day. Building Pulse the rest of the time.
+                  Senior Solutions Architect & Financial Audit Strategist at EY.
+                  Building enterprise AI systems by day. Building Pulse the rest
+                  of the time.
                 </p>
+                <LinkedinLink />
               </div>
             </Reveal>
 
@@ -75,21 +78,21 @@ export default function AboutPage() {
               <div className="flex flex-col gap-7 text-[1.05rem] leading-relaxed text-silver text-pretty">
                 <p>
                   I started Pulse because the practice owners I knew kept describing
-                  the same problem: enquiries arriving in the gaps — evenings,
-                  weekends, lunch breaks — going unanswered, then quietly costing them
-                  thousands in lost bookings every month.
+                  the same problem. Enquiries arriving in the gaps (evenings,
+                  weekends, lunch breaks) going unanswered, then quietly costing
+                  them thousands in lost bookings every month.
                 </p>
                 <p>
-                  Inside enterprise consulting, I'd been designing AI systems for
-                  organisations with the budget and patience for a year-long rollout.
-                  The pattern was always the same: serious operational discipline up
-                  front, then software second. The technology was almost never the
-                  hard part.
+                  Inside enterprise consulting, I had been designing AI systems
+                  for organisations with the budget and patience for a year-long
+                  rollout. The pattern was always the same: serious operational
+                  discipline up front, software second. The technology was almost
+                  never the hard part.
                 </p>
                 <p>
-                  Most of what calls itself "AI for healthcare" is the inverse — a
-                  SaaS dashboard with a chatbot stapled on, sold by people who've
-                  never run a reception desk. Pulse exists to fix that.
+                  Most of what calls itself "AI for healthcare" is the inverse.
+                  A SaaS dashboard with a chatbot stapled on, sold by people who
+                  have never run a reception desk. Pulse exists to fix that.
                 </p>
                 <p className="text-bone">
                   Pulse is built by an operator, for operators. We get the system

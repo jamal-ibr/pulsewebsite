@@ -17,7 +17,7 @@ export function HowItWorks() {
         <SectionHeading
           eyebrow="Process"
           title="From discovery to live, in two weeks."
-          description="No drawn-out implementation. No junior hand-off. A founder-led build with a clear, narrow path from first call to first booking."
+          description="No drawn-out rollout. No hand-off. A founder-led build with a clear, narrow path from first call to first booking."
           size="lg"
         />
 
@@ -29,7 +29,7 @@ export function HowItWorks() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.6, delay: 0.1 * i, ease: [0.22, 1, 0.36, 1] }}
-              className="relative flex flex-col gap-6 bg-ink p-8 sm:p-10"
+              className="relative flex flex-col bg-ink p-8 sm:p-10"
             >
               <div className="flex items-center justify-between">
                 <span className="font-mono text-eyebrow uppercase text-pulse-bright">
@@ -39,10 +39,10 @@ export function HowItWorks() {
                   {String(i + 1).padStart(2, '0')}/04
                 </span>
               </div>
-              <h3 className="text-xl font-medium tracking-tight text-bone sm:text-2xl">
+              <h3 className="mt-6 min-h-[2.4em] text-xl font-medium leading-[1.2] tracking-tight text-bone sm:text-2xl">
                 {step.title}
               </h3>
-              <p className="text-[0.95rem] leading-relaxed text-silver text-pretty">
+              <p className="mt-5 text-[0.95rem] leading-relaxed text-silver text-pretty">
                 {step.description}
               </p>
             </motion.li>

@@ -11,7 +11,7 @@ export function FAQ() {
           <SectionHeading
             eyebrow="Frequently Asked"
             title="Questions, answered."
-            description="If something's missing, ask on the discovery call. We'll give you a direct, founder-level answer — no sales-script run-around."
+            description="If something is missing, ask on the discovery call. We will give you a direct, founder-level answer. No sales-script run-around."
             size="lg"
           />
           <Accordion items={[...FAQS]} />

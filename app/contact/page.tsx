@@ -39,9 +39,9 @@ export default function ContactPage() {
                   Book a 30-minute call.
                 </h2>
                 <p className="text-[1.02rem] leading-relaxed text-silver text-pretty">
-                  Pick a slot below. We'll spend the call understanding your
+                  Pick a slot below. We will spend the call understanding your
                   practice, identifying where revenue is leaking, and answering any
-                  questions about how Pulse works. No pitch deck.
+                  questions about how Pulse works.
                 </p>
 
                 <CalendlyEmbed

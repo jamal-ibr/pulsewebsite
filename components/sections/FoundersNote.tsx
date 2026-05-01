@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { ArrowUpRight } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
+import { LinkedinLink } from '@/components/ui/LinkedinLink';
 import { Reveal } from '@/components/ui/Reveal';
 
 export function FoundersNote() {
@@ -14,10 +15,11 @@ export function FoundersNote() {
               <Eyebrow>Founder Note</Eyebrow>
               <p className="font-mono text-eyebrow uppercase text-silver/60">Jamal Ibrahim</p>
               <p className="text-sm text-silver">
-                Senior solution architect · big-four professional services. Building AI
-                infrastructure for enterprise clients by day; building Pulse for the
-                practices that actually need it the rest of the time.
+                Senior Solutions Architect & Financial Audit Strategist at EY.
+                Building AI infrastructure for enterprise clients by day. Building
+                Pulse for the practices that actually need it the rest of the time.
               </p>
+              <LinkedinLink />
             </div>
           </Reveal>
 
@@ -25,7 +27,7 @@ export function FoundersNote() {
             <div className="flex flex-col gap-7">
               <p className="text-2xl font-medium leading-snug tracking-tight text-bone text-balance sm:text-3xl">
                 &ldquo;Most &lsquo;AI for healthcare&rsquo; is a SaaS dashboard with a
-                chatbot bolted on. Pulse is built the other way around — by an
+                chatbot bolted on. Pulse is built the other way around. By an
                 operator, for operators. Outcomes first, software second.&rdquo;
               </p>
               <Link
